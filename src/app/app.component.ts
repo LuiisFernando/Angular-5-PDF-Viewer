@@ -9,7 +9,7 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
 })
 export class AppComponent {
   title = 'app';
-  pdfSrc: string = './assets/Plataformas.pdf';
+  pdfSrc = './assets/Plataformas.pdf';
   nome = 'Luis';
   page = 1;
   mostrarTudo = false;
@@ -22,7 +22,7 @@ export class AppComponent {
   selecionarArquivo() {
     const $pdf: any = document.querySelector('#file');
 
-    if (typeof (FileReader) !== 'undefine') {
+    if (typeof (FileReader) !== 'undefined') {
       const reader = new FileReader();
 
       reader.onload = (e: any) => {
