@@ -9,7 +9,7 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
 })
 export class AppComponent {
   title = 'app';
-  pdfSrc: string | ArrayBuffer = './assets/Plataformas.pdf';
+  pdfSrc: string = './assets/Plataformas.pdf';
   nome = 'Luis';
   page = 1;
   mostrarTudo = false;
